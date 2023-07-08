@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="px-36 pt-10">
-        <header class="flex items-center px-6 py-2.5">
+<body class="overflow-x-hidden">
+    <div class="px-6 sm:px-36 sm:pt-10">
+        <header class="hidden sm:flex items-center px-6 py-2.5">
         <button>
             <svg width="37" height="40" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.834344 21.3482L5.01425 17.8543C5.98291 17.0448 7.40667 17.1958 8.19403 18.1913C8.98176 19.1872 8.83486 20.6509 7.8662 21.4604L5.84341 23.1512L20.5299 35.8732C21.4985 36.6827 21.6454 38.1464 20.8577 39.1419C20.4111 39.7071 19.7595 40 19.1028 40C18.6018 40 18.0971 39.8296 17.6783 39.4793L0.834344 24.9542C0.306723 24.513 0 23.8507 0 23.1512C0 22.4516 0.306723 21.7898 0.834344 21.3482V21.3482Z" fill="white"/>
@@ -27,16 +27,30 @@
             <button>Contact</button>
         </div>
         </header>
-        <main class="py-24 flex flex-col gap-20">
-            <section class="profile grid grid-cols-3">
-                <div class="flex flex-col gap-4 justify-center">
+        <main class="py-6 mb-12 sm:py-24 flex flex-col gap-20">
+            <section class="profile flex  flex-col-reverse sm:grid sm:grid-cols-1 sm:grid-cols-3">
+                <div class="flex sm:hidden sm:flex-col items-center sm:items-end justify-between sm:justify-center">
+                    <button class="flex text-purple-900  items-center">Baixar CV<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 2V11.5" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 7L8 11.5L12.5 7" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 13.5H13.5" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </button>
+                    <button class="border  border-solid border-purple-700 flex sm:mb-6 px-2.5 py-1 textColor-p fontweight-700">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.25626 16.5937C3.13959 14.7098 2.74899 12.483 3.1578 10.3314C3.5666 8.17982 4.74669 6.25145 6.47652 4.9083C8.20636 3.56516 10.367 2.8996 12.5527 3.03658C14.7385 3.17357 16.7991 4.10367 18.3477 5.65227C19.8963 7.20088 20.8264 9.26149 20.9634 11.4473C21.1004 13.633 20.4348 15.7937 19.0917 17.5235C17.7486 19.2533 15.8202 20.4334 13.6686 20.8422C11.5171 21.251 9.29025 20.8604 7.40626 19.7437V19.7437L4.29376 20.625C4.16624 20.6623 4.03103 20.6646 3.90231 20.6317C3.77359 20.5987 3.6561 20.5318 3.56215 20.4379C3.4682 20.3439 3.40126 20.2264 3.36833 20.0977C3.33541 19.969 3.33771 19.8338 3.37501 19.7062L4.25626 16.5937Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.2594 17.25C13.2726 17.2525 12.295 17.0599 11.3828 16.6834C10.4706 16.3069 9.64176 15.7539 8.94395 15.0561C8.24615 14.3583 7.69311 13.5295 7.3166 12.6173C6.9401 11.7051 6.74755 10.7275 6.75002 9.74062C6.7525 9.04605 7.03016 8.38078 7.52217 7.89052C8.01419 7.40027 8.68045 7.12499 9.37502 7.125V7.125C9.48962 7.12408 9.60234 7.15407 9.70133 7.21182C9.80032 7.26956 9.88191 7.35292 9.93752 7.45312L11.0344 9.36562C11.0996 9.48188 11.1331 9.61327 11.1315 9.74657C11.1298 9.87987 11.0931 10.0104 11.025 10.125L10.1438 11.5969C10.5952 12.601 11.399 13.4049 12.4031 13.8562L13.875 12.975C13.9896 12.9069 14.1202 12.8702 14.2535 12.8686C14.3868 12.8669 14.5181 12.9004 14.6344 12.9656L16.5469 14.0625C16.6471 14.1181 16.7305 14.1997 16.7882 14.2987C16.8459 14.3977 16.8759 14.5104 16.875 14.625C16.8726 15.3188 16.5965 15.9837 16.1068 16.4751C15.6171 16.9666 14.9532 17.2451 14.2594 17.25V17.25Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        Vamos conversar </button>
+                </div>
+                <div class="flex flex-col mb-5 sm:mb-0 gap-4 justify-center">
                     <div class="flex-col">
                         <button class="border mb-6 px-2.5 py-1 fit-content background-10 textColor-p fontweight-700">👋 Greeting!</button>
                         <h1 class="text-white text-5xl">Henrique</h1>
                         <h1 class="text-white text-5xl">Sousa</h1>
                     </div>
                     <span class="text-white opacity-50">Front-end developer · UI designer</span>
-                    <div class="flex gap-2">
+                    <div class="hidden sm:flex gap-2">
                     <button>
                         <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_21_3379)">
@@ -65,10 +79,10 @@
                     </button>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="w-full h-96 rounded-full bg-purple-500 opacity-50">.</div>
-                    <img class="absolute -top-7" src="./Group 33.png" alt="">
-                    <div class="absolute opacity-80 top-0">
+                <div class="relative my-10 sm:my-0">
+                    <div class="w-full h-80 sm:h-96 rounded-full bg-purple-500 opacity-50">.</div>
+                    <img class="absolute top-0 sm:-top-7" src="./Group 33.png" alt="">
+                    <div class="absolute opacity-80 -left-4 sm:left-0 top-0">
                         <svg class="w-28" width="172" height="173" viewBox="0 0 172 173" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_21_4111)">
                             <circle cx="85.8102" cy="82.7942" r="35.8102" fill="#090E16"/>
@@ -88,7 +102,7 @@
                             </defs>
                             </svg>
                         </div>
-                    <div class="absolute opacity-80 top-28 -right-14">
+                    <div class="absolute opacity-80 top-28 -right-10 sm:-right-14">
                         <svg class="w-28" width="172" height="172" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_21_4108)">
                             <circle cx="86.1435" cy="82.1102" r="35.8102" fill="#090E16"/>
@@ -113,7 +127,7 @@
                             </defs>
                             </svg>
                     </div>
-                    <div class="absolute opacity-80 bottom-0">
+                    <div class="absolute opacity-80 -left-4 sm:left-0 bottom-0">
                         <svg class="w-28" width="172" height="172" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g filter="url(#filter0_d_21_4114)">
                             <circle cx="85.8102" cy="81.9796" r="35.8102" fill="#090E16"/>
@@ -139,23 +153,51 @@
                             </svg>
                     </div>
                 </div>
-                <div class="flex flex-col items-end justify-center">
+                <div class="hidden sm:flex sm:flex-col items-center sm:items-end justify-between sm:justify-center">
                     <button class="flex text-purple-900  items-center">Baixar CV<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 2V11.5" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M3.5 7L8 11.5L12.5 7" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M2.5 13.5H13.5" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         </button>
-                    <button class="border  border-solid border-purple-700 flex mb-6 px-2.5 py-1 textColor-p fontweight-700">
+                    <button class="border  border-solid border-purple-700 flex sm:mb-6 px-2.5 py-1 textColor-p fontweight-700">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4.25626 16.5937C3.13959 14.7098 2.74899 12.483 3.1578 10.3314C3.5666 8.17982 4.74669 6.25145 6.47652 4.9083C8.20636 3.56516 10.367 2.8996 12.5527 3.03658C14.7385 3.17357 16.7991 4.10367 18.3477 5.65227C19.8963 7.20088 20.8264 9.26149 20.9634 11.4473C21.1004 13.633 20.4348 15.7937 19.0917 17.5235C17.7486 19.2533 15.8202 20.4334 13.6686 20.8422C11.5171 21.251 9.29025 20.8604 7.40626 19.7437V19.7437L4.29376 20.625C4.16624 20.6623 4.03103 20.6646 3.90231 20.6317C3.77359 20.5987 3.6561 20.5318 3.56215 20.4379C3.4682 20.3439 3.40126 20.2264 3.36833 20.0977C3.33541 19.969 3.33771 19.8338 3.37501 19.7062L4.25626 16.5937Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M14.2594 17.25C13.2726 17.2525 12.295 17.0599 11.3828 16.6834C10.4706 16.3069 9.64176 15.7539 8.94395 15.0561C8.24615 14.3583 7.69311 13.5295 7.3166 12.6173C6.9401 11.7051 6.74755 10.7275 6.75002 9.74062C6.7525 9.04605 7.03016 8.38078 7.52217 7.89052C8.01419 7.40027 8.68045 7.12499 9.37502 7.125V7.125C9.48962 7.12408 9.60234 7.15407 9.70133 7.21182C9.80032 7.26956 9.88191 7.35292 9.93752 7.45312L11.0344 9.36562C11.0996 9.48188 11.1331 9.61327 11.1315 9.74657C11.1298 9.87987 11.0931 10.0104 11.025 10.125L10.1438 11.5969C10.5952 12.601 11.399 13.4049 12.4031 13.8562L13.875 12.975C13.9896 12.9069 14.1202 12.8702 14.2535 12.8686C14.3868 12.8669 14.5181 12.9004 14.6344 12.9656L16.5469 14.0625C16.6471 14.1181 16.7305 14.1997 16.7882 14.2987C16.8459 14.3977 16.8759 14.5104 16.875 14.625C16.8726 15.3188 16.5965 15.9837 16.1068 16.4751C15.6171 16.9666 14.9532 17.2451 14.2594 17.25V17.25Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                            
                         Vamos conversar </button>
                 </div>
+                <div class="flex m-auto sm:hidden gap-2">
+                    <button>
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_21_3379)">
+                                <path d="M18.9999 0C29.4939 0 38 8.50725 38 19.0001C38 29.4929 29.4939 38 18.9999 38C8.50594 38 0 29.4928 0 19.0001C0 8.50738 8.50607 0 18.9999 0Z" fill="white" fill-opacity="0.5"/>
+                                <path d="M10.7065 26.1059H14.2643V14.2475H10.7065V26.1059ZM24.567 13.8368C22.8404 13.8368 21.2954 14.4673 20.1995 15.8591V14.2085H16.6286V26.1061H20.1995V19.6722C20.1995 18.3125 21.4452 16.986 23.0055 16.986C24.5659 16.986 24.9507 18.3125 24.9507 19.6389V26.1049H28.5084V19.3741C28.5083 14.6989 26.2949 13.8368 24.567 13.8368ZM12.4687 13.0625C13.452 13.0625 14.25 12.2644 14.25 11.2812C14.25 10.2979 13.452 9.5 12.4687 9.5C11.4855 9.5 10.6874 10.298 10.6874 11.2813C10.6874 12.2646 11.4855 13.0625 12.4687 13.0625Z" fill="#090E16"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_21_3379">
+                                    <rect width="38" height="38" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>          
+                    </button>
+                    <button>
+                        <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0674 0.40332C9.13764 0.40332 0.285034 9.25593 0.285034 20.1857C0.285034 28.9394 5.94773 36.333 13.8112 38.9542C14.8003 39.1273 15.1713 38.5338 15.1713 38.0145C15.1713 37.5447 15.1465 35.9868 15.1465 34.3301C10.1762 35.245 8.89036 33.1184 8.49471 32.0056C8.27216 31.4369 7.30777 29.6812 6.46702 29.2114C5.77464 28.8405 4.78552 27.9255 6.44229 27.9008C8.00015 27.8761 9.11291 29.335 9.48383 29.9285C11.2642 32.9206 14.108 32.0798 15.2454 31.5605C15.4185 30.2747 15.9378 29.4092 16.5066 28.9146C12.105 28.4201 7.5056 26.7139 7.5056 19.1471C7.5056 16.9958 8.27216 15.2154 9.53329 13.8306C9.33546 13.336 8.64308 11.3083 9.73111 8.58827C9.73111 8.58827 11.3879 8.06898 15.1713 10.616C16.7538 10.1709 18.4353 9.94831 20.1168 9.94831C21.7983 9.94831 23.4799 10.1709 25.0624 10.616C28.8458 8.04426 30.5026 8.58827 30.5026 8.58827C31.5906 11.3083 30.8982 13.336 30.7004 13.8306C31.9615 15.2154 32.7281 16.971 32.7281 19.1471C32.7281 26.7386 28.104 28.4201 23.7024 28.9146C24.4195 29.5328 25.0377 30.7198 25.0377 32.5744C25.0377 35.2203 25.013 37.3469 25.013 38.0145C25.013 38.5338 25.3839 39.152 26.373 38.9542C34.1871 36.333 39.8498 28.9146 39.8498 20.1857C39.8498 9.25593 30.9971 0.40332 20.0674 0.40332Z" fill="white" fill-opacity="0.5"/>
+                        </svg>                    
+                    </button>
+                    <button>
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.7972 18.1427C24.5285 18.1416 24.2626 18.1966 24.0164 18.3042C23.7702 18.4119 23.5492 18.5697 23.3676 18.7677C23.186 18.9657 23.0477 19.1994 22.9616 19.4539C22.8755 19.7085 22.8436 19.9782 22.8678 20.2457H26.8424C26.8681 19.9681 26.8333 19.6882 26.7404 19.4253C26.6475 19.1625 26.4987 18.9228 26.3044 18.723C26.11 18.5231 25.8746 18.3677 25.6144 18.2675C25.3542 18.1673 25.0754 18.1247 24.7972 18.1427Z" fill="white" fill-opacity="0.5"/>
+                            <path d="M14.6292 20.2842H12.256V24.0273H14.1855C16.1149 24.0273 16.9639 23.3906 16.9639 22.0978C16.9639 20.8051 16.0763 20.2842 14.6292 20.2842Z" fill="white" fill-opacity="0.5"/>
+                            <path d="M16.3078 16.85C16.3078 15.8274 15.6325 15.21 14.4749 15.21H12.256V18.5672H13.8961C15.6133 18.5672 16.3078 17.9498 16.3078 16.85Z" fill="white" fill-opacity="0.5"/>
+                            <path d="M19.4721 0.411133C15.6561 0.411133 11.9257 1.54273 8.75278 3.66281C5.57984 5.7829 3.10684 8.79626 1.6465 12.3218C0.186155 15.8474 -0.195937 19.7269 0.548539 23.4696C1.29302 27.2123 3.13062 30.6502 5.82898 33.3486C8.52734 36.047 11.9653 37.8846 15.708 38.6291C19.4507 39.3735 23.3302 38.9914 26.8557 37.5311C30.3813 36.0708 33.3947 33.5978 35.5148 30.4248C37.6349 27.2519 38.7665 23.5215 38.7665 19.7055C38.7665 17.1717 38.2674 14.6627 37.2978 12.3218C36.3281 9.98094 34.9069 7.85395 33.1153 6.06231C31.3236 4.27067 29.1966 2.84946 26.8557 1.87983C24.5149 0.910195 22.0059 0.411133 19.4721 0.411133ZM15.0344 25.8796H9.82497V13.3383H15.0344C17.2919 13.3383 18.7775 14.5153 18.7775 16.4254C18.8042 17.0671 18.6013 17.6973 18.2052 18.203C17.8092 18.7086 17.246 19.0566 16.6166 19.1845C17.0154 19.1938 17.4082 19.2843 17.7709 19.4506C18.1336 19.6169 18.4585 19.8554 18.7259 20.1516C18.9932 20.4478 19.1972 20.7955 19.3255 21.1733C19.4539 21.5511 19.5037 21.951 19.4721 22.3488C19.4721 24.5869 17.5427 25.8796 15.0344 25.8796ZM21.8839 14.303H27.6722V15.2678H21.8839V14.303ZM29.1193 21.7314H22.7522V22.0015C22.719 22.2947 22.749 22.5916 22.8403 22.8722C22.9315 23.1528 23.0819 23.4105 23.2812 23.6281C23.4805 23.8457 23.7241 24.018 23.9956 24.1335C24.2672 24.249 24.5603 24.3049 24.8552 24.2975C25.2694 24.3619 25.6928 24.2742 26.0475 24.0508C26.4021 23.8274 26.6639 23.4833 26.7847 23.082H29.1193C28.9114 24.0081 28.3694 24.8252 27.597 25.3769C26.8246 25.9286 25.876 26.1763 24.9324 26.0726C24.3294 26.1335 23.7203 26.0615 23.1481 25.8617C22.5759 25.6619 22.0544 25.3391 21.6203 24.9161C21.1863 24.4931 20.8502 23.9801 20.6357 23.4132C20.4213 22.8463 20.3336 22.2393 20.379 21.6349V20.7859C20.338 20.2003 20.4242 19.6127 20.6316 19.0635C20.839 18.5143 21.1627 18.0164 21.5806 17.6041C21.9984 17.1917 22.5005 16.8746 23.0524 16.6745C23.6044 16.4744 24.193 16.396 24.7781 16.4447C25.3612 16.4073 25.9455 16.4953 26.4918 16.7027C27.0381 16.9102 27.5335 17.2322 27.9449 17.6472C28.3562 18.0622 28.6739 18.5605 28.8764 19.1086C29.079 19.6567 29.1618 20.2418 29.1193 20.8245V21.7314Z" fill="white" fill-opacity="0.5"/>
+                        </svg>                    
+                    </button>
+                    </div>
             </section>
-            <section class="skills p-24 border-y border-gray-600">
-                <div class="flex mb-8 justify-center gap-20">
+            <section class="skills p-10 sm:p-24 border-y border-gray-600">
+                <div class="flex flex-col sm:flex-row mb-8 justify-center gap-8 sm:gap-20">
                     <button class="skillCard">
                         <svg width="76" height="64" viewBox="0 0 76 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 22L4 32L16 42" stroke="#7B4AE2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -235,7 +277,7 @@
                         <h3 class="text-3xl">Designer</h3> 
                     </button>
                 </div>
-                <div class="grid grid-cols-3 max-w-4xl bg-purple-800 bg-opacity-30 rounded-2xl text-purple-600 m-auto px-5 py-8 text-center gap-36">
+                <div class="hidden sm:grid grid-cols-3 max-w-4xl bg-purple-800 bg-opacity-30 rounded-2xl text-purple-600 m-auto px-5 py-8 text-center gap-36">
                     <div>
                         <h5 class="text-base opacity-50">Developer</h5>
                         <h3 class="text-3xl">Front-end</h3> 
@@ -250,16 +292,16 @@
                     </div>
                 </div>
             </section>
-            <section class="about grid grid-cols-3 gap-28">
+            <section class="about grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-28">
                 <div class="rounded-full bg-white">
                     <img src="./henrique-profile-no-bg 1.png" alt="">
                 </div>
                 <div class="col-span-2 flex flex-col gap-6">
                     <button class="border px-2.5 py-1 w-fit background-10 textColor-p fontweight-700">🧐 About Me</button>
-                    <div class="text-white flex flex-col text-5xl">
+                    <div class="text-white flex flex-col text-2xl sm:text-5xl">
                         <span>Washington Henrique </span><span>Fernandes de Sousa</span>
                     </div>
-                    <p class="flex flex-col text-white">
+                    <p class="flex flex-col opacity-60 text-sm sm:text-lg text-white">
                         <span class="mb-4">👋 Me chamo Washington Henrique Fernandes de Sousa, mas pode me chamar apenas de Henrique. Prazer!</span>
                         <span>👨‍💻 Há mais de 2 anos desenvolvendo e programando interfaces com JavaScript, React JS e Typescript.</span>
                         <span>🎓 Graduado em Análise e Desenvolvimento de Sistemas pela Fatec de São José dos Campos</span>
@@ -270,10 +312,10 @@
             </section>
             <section class="projects flex flex-col">
                 <button class="border px-2.5 py-1 w-fit background-10 textColor-p fontweight-700">🔗 Portfolio</button>
-                <div class="flex justify-between">
-                    <span class="text-5xl text-white">Works and projects</span>
-                    <div class="flex gap-8">
-                        <button class="border  border-solid border-purple-700 opacity-50 items-center gap-4 flex px-2.5 py-1 w-fit textColor-p fontweight-700">
+                <div class="flex flex-col sm:flex-row justify-between">
+                    <span class="text-2xl :text-5xl text-white">Works and projects</span>
+                    <div class="flex gap-2 sm:gap-8">
+                        <button class="border  border-solid border-purple-700 opacity-50 items-center gap-1 flex px-2.5 py-1 w-fit textColor-p fontweight-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40" fill="none">
                                 <path d="M7.5 12.5H21.25" stroke="#7B4AE2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M28.75 12.5H42.5" stroke="#7B4AE2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -285,7 +327,7 @@
                                 <circle cx="12.5" cy="21.25" r="12.5" fill="#7B4AE2" fill-opacity="0.2"/>
                               </svg>UI Design
                         </button>
-                        <button class="border opacity-50 items-center gap-4 flex px-2.5 py-1 w-fit background-10 textColor-p fontweight-700">
+                        <button class="border opacity-50 items-center gap-1 flex px-2.5 py-1 w-fit background-10 textColor-p fontweight-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40" fill="none">
                                 <circle cx="32.5" cy="20.5" r="12.5" fill="#7B4AE2" fill-opacity="0.2"/>
                                 <path d="M34.6251 23.3438C34.8843 22.206 35.0101 21.042 35.0001 19.8751C34.9376 11.6094 28.0938 4.92194 19.8438 5.00007C16.3193 5.03723 12.9205 6.31434 10.2437 8.60733C7.56683 10.9003 5.78294 14.0627 5.205 17.5397C4.62706 21.0166 5.29198 24.5861 7.08311 27.6217C8.87423 30.6574 11.6771 32.9654 15.0001 34.1407C15.5653 34.3443 16.1714 34.4086 16.7668 34.328C17.3621 34.2473 17.9293 34.0243 18.42 33.6777C18.9108 33.3311 19.3107 32.8712 19.5858 32.337C19.8608 31.8029 20.003 31.2102 20.0001 30.6094V30.0001C19.998 29.507 20.0936 29.0185 20.2813 28.5626C20.469 28.1067 20.7452 27.6924 21.0938 27.3438C21.4424 26.9952 21.8567 26.719 22.3126 26.5313C22.7685 26.3436 23.257 26.248 23.7501 26.2501H30.9688C31.8171 26.2506 32.6406 25.9635 33.3046 25.4357C33.9687 24.9078 34.4342 24.1704 34.6251 23.3438V23.3438Z" stroke="#7B4AE2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -295,7 +337,7 @@
                                 <path d="M27.0312 17.1875C27.7216 17.1875 28.2812 16.6279 28.2812 15.9375C28.2812 15.2471 27.7216 14.6875 27.0312 14.6875C26.3409 14.6875 25.7812 15.2471 25.7812 15.9375C25.7812 16.6279 26.3409 17.1875 27.0312 17.1875Z" fill="#7B4AE2"/>
                               </svg>Design
                         </button>
-                        <button class="border  border-solid border-purple-700 opacity-50 items-center gap-4 flex px-2.5 py-1 w-fit textColor-p fontweight-700">
+                        <button class="border  border-solid border-purple-700 opacity-50 items-center gap-1 flex px-2.5 py-1 w-fit textColor-p fontweight-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="0 0 45 40" fill="none">
                                 <path d="M7.5 12.5H21.25" stroke="#7B4AE2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M28.75 12.5H42.5" stroke="#7B4AE2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -309,7 +351,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="grid grid-cols-4 gap-12 my-12">
+                <div class="grid grid-cols-1 sm:grid-cols-4 gap-12 my-12">
                     <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
@@ -319,7 +361,7 @@
                         </div>
                         <img src="./image 1.png" alt="">
                     </div>
-                    <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
                         <div>
@@ -328,7 +370,7 @@
                         </div>
                         <img src="./image 1.png" alt="">
                     </div>
-                    <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
                         <div>
@@ -337,7 +379,7 @@
                         </div>
                         <img src="./image 1.png" alt="">
                     </div>
-                    <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
                         <div>
@@ -346,7 +388,7 @@
                         </div>
                         <img src="./image 1.png" alt="">
                     </div>
-                    <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
                         <div>
@@ -355,7 +397,7 @@
                         </div>
                         <img src="./image 1.png" alt="">
                     </div>
-                    <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
                         <div>
@@ -364,7 +406,7 @@
                         </div>
                         <img src="./image 1.png" alt="">
                     </div>
-                    <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
                         <div>
@@ -373,7 +415,7 @@
                         </div>
                         <img src="./image 1.png" alt="">
                     </div>
-                    <div class="p-8 flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-5 border  border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-10 rounded-2xl">
                         <h3 class="text-white text-xl">Move.it</h3>
                         <p class="text-white opacity-60 text-sm">Aplicação da NLW#04 da Rocketseat. Desenvolvida com React. Plataforma de Pomodoro com exercícios.</p>
                         <div>
@@ -386,9 +428,9 @@
                 <button class="text-purple-900 right-0 self-end">See more projects at Behance ></button>
             </section>
             <section class="Video projects">
-                <h2 class="text-5xl text-white">Video projects</h2>
-                <h4 class="text-xl text-white opacity-50 mb-12 mt-2">It's always good to know a little bit of editing</h4>
-                <div class="grid grid-cols-3 gap-14">
+                <h2 class="text-2xl :text-5xl text-white">Video projects</h2>
+                <h4 class="text-sm :text-xl text-white opacity-50 mb-12 mt-2">It's always good to know a little bit of editing</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-14">
                     <div class="p-8 flex flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
                         <img src="./image 2.png" alt="">
                         <div class="flex justify-between mt-2">
@@ -403,7 +445,7 @@
                             <span class="text-white">Assistir ></span>
                         </div>
                     </div>
-                    <div class="p-8 flex flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
                         <img src="./image 2.png" alt="">
                         <div class="flex justify-between mt-2">
                             <h4 class="text-xl text-white">Move.it</h4>
@@ -417,7 +459,7 @@
                             <span class="text-white">Assistir ></span>
                         </div>
                     </div>
-                    <div class="p-8 flex flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
+                    <div class="p-8 hidden sm:flex flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
                         <img src="./image 2.png" alt="">
                         <div class="flex justify-between mt-2">
                             <h4 class="text-xl text-white">Move.it</h4>
@@ -472,19 +514,19 @@
                             <path d="M29.9042 0.0172226C29.7666 0.029733 29.3286 0.0735193 28.9345 0.104795C19.8444 0.924225 11.3298 5.82829 5.93705 13.3658C2.93412 17.5568 1.01349 22.3107 0.287781 27.3461C0.0312805 29.1039 0 29.623 0 32.0063C0 34.3895 0.0312805 34.9087 0.287781 36.6664C2.02698 48.6826 10.5791 58.7785 22.1779 62.5191C24.2549 63.1884 26.4446 63.645 28.9345 63.9202C29.9042 64.0266 34.0958 64.0266 35.0655 63.9202C39.3634 63.4449 43.0045 62.3815 46.5955 60.5487C47.146 60.2672 47.2524 60.1922 47.1773 60.1296C47.1273 60.0921 44.7812 56.9457 41.966 53.1426L36.8485 46.2306L30.436 36.7414C26.9075 31.5246 24.0047 27.2586 23.9797 27.2586C23.9546 27.2523 23.9296 31.4683 23.9171 36.6163C23.8983 45.6301 23.8921 45.9929 23.7795 46.2055C23.6168 46.5121 23.4917 46.6372 23.2289 46.7748C23.0287 46.8749 22.8536 46.8936 21.9089 46.8936H20.8266L20.5388 46.7122C20.3511 46.5934 20.2135 46.437 20.1196 46.2556L19.9883 45.9741L20.0008 33.4324L20.0196 20.8845L20.2135 20.6406C20.3136 20.5092 20.5263 20.3403 20.6764 20.259C20.9329 20.1339 21.033 20.1214 22.1153 20.1214C23.3916 20.1214 23.6043 20.1714 23.9359 20.5342C24.0297 20.6343 27.5019 25.8637 31.6559 32.1626C35.81 38.4616 41.4905 47.0625 44.2807 51.2848L49.3482 58.9599L49.6047 58.791C51.8757 57.3148 54.278 55.213 56.1799 53.0237C60.2276 48.3761 62.8364 42.7089 63.7122 36.6664C63.9687 34.9087 64 34.3895 64 32.0063C64 29.623 63.9687 29.1039 63.7122 27.3461C61.973 15.3299 53.4209 5.23405 41.8221 1.49345C39.7763 0.830397 37.5992 0.373768 35.1593 0.0985401C34.5588 0.0359882 30.4235 -0.0328189 29.9042 0.0172226ZM43.0045 19.3708C43.3048 19.5209 43.5488 19.8086 43.6364 20.1089C43.6864 20.2715 43.6989 23.7494 43.6864 31.5872L43.6676 42.834L41.6845 39.794L39.695 36.754V28.5784C39.695 23.2928 39.72 20.3216 39.7576 20.1777C39.8577 19.8274 40.0766 19.5522 40.3769 19.3895C40.6334 19.2582 40.7273 19.2457 41.7095 19.2457C42.6354 19.2457 42.798 19.2582 43.0045 19.3708Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="57" height="64" viewBox="0 0 57 64" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5.1358 57.602L28.183 64L51.293 57.5926L56.4343 0H0ZM46.9154 53.9685L28.2645 59.0994L28.2645 51.7678L28.2084 51.7811L13.7123 47.7674L12.7225 36.6823H19.8148L20.3296 42.309L28.2099 44.4253L28.2645 44.4171V33.0141L12.3745 33.014L11.7558 25.9598V25.9598L28.2645 18.894L28.2646 18.406H11.1276L10.5016 11.3517H28.1929H28.2646L28.2645 4.79706H51.2852L46.9154 53.9685Z" fill="#7B4AE2" fill-opacity="0.5"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M29.4032 18.4058L28.2645 18.8939V25.9595H28.2645V33.0138H36.8922L36.108 42.2367L28.2645 44.423V51.7731L42.7125 47.7594L44.6151 25.9595H28.2646L45.2565 18.4058L45.8633 11.3516H28.2645V18.3174V18.4058H29.4032Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                             <path d="M31.9316 62.9622L9.82022 56.824L4.84312 1H59.0887L54.1064 56.8147L31.9316 62.9622Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-width="2"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M46.4246 47.7632L46.5308 46.5696L48.191 27.9706L48.3633 26.0735H22.6176L21.9719 18.8392H31.9538H48.9834L49.1479 17.2512L49.4698 13.6698L49.6387 11.7744H31.9538H14.2511L14.4202 13.6698L16.1566 33.1381H31.966H40.6409L39.8209 42.3005L31.9647 44.421L24.067 42.305L23.5641 36.6706H19.7408H16.4722L17.462 47.7632L31.9335 51.7806L46.4246 47.7632Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                             <g clip-path="url(#clip0_21_3162)">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4167 0C15.5287 0 10.75 4.77867 10.75 10.6667C10.75 16.5547 15.5287 21.3333 21.4167 21.3333C15.5287 21.3333 10.75 26.112 10.75 32C10.75 37.888 15.5287 42.6667 21.4167 42.6667C15.5287 42.6667 10.75 47.4453 10.75 53.3333C10.75 59.2213 15.5287 64 21.4167 64C27.3047 64 32.0833 59.2213 32.0833 53.3333L32.0833 32C32.0833 37.888 36.862 42.6667 42.75 42.6667C48.638 42.6667 53.4167 37.888 53.4167 32C53.4167 26.112 48.638 21.3333 42.75 21.3333C48.638 21.3333 53.4167 16.5547 53.4167 10.6667C53.4167 4.77867 48.638 0 42.75 0H21.4167ZM42.75 21.3333H32.0833L32.0833 32C32.0833 26.112 36.862 21.3333 42.75 21.3333Z" fill="#7B4AE2" fill-opacity="0.5"/>
@@ -496,17 +538,17 @@
                             </defs>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0003 1.5C14.7435 1.5 0.75 15.4909 0.75 32.7503C0.75 46.5574 9.70415 58.2714 22.1208 62.4035C23.6826 62.6928 24.256 61.7256 24.256 60.9002C24.256 60.155 24.227 57.6933 24.2136 55.0821C15.5197 56.9725 13.6852 51.395 13.6852 51.395C12.2637 47.7829 10.2154 46.8224 10.2154 46.8224C7.3801 44.8828 10.4292 44.9227 10.4292 44.9227C13.5672 45.1431 15.2196 48.143 15.2196 48.143C18.0068 52.9205 22.5302 51.5393 24.3134 50.7408C24.5939 48.7211 25.4038 47.3425 26.2975 46.5621C19.3564 45.7719 12.0598 43.0923 12.0598 31.1181C12.0598 27.7063 13.2805 24.9185 15.2796 22.7301C14.9551 21.943 13.8855 18.7645 15.5823 14.46C15.5823 14.46 18.2065 13.6202 24.1784 17.6633C26.6711 16.9709 29.3445 16.6237 32.0003 16.6118C34.656 16.6237 37.3315 16.9709 39.8289 17.6633C45.7935 13.6202 48.414 14.46 48.414 14.46C50.115 18.7645 49.0449 21.943 48.7204 22.7301C50.7241 24.9185 51.9366 27.7063 51.9366 31.1181C51.9366 43.1208 44.626 45.7636 37.6673 46.5373C38.7882 47.507 39.7869 49.4088 39.7869 52.3244C39.7869 56.5057 39.7507 59.8709 39.7507 60.9002C39.7507 61.7318 40.3132 62.7063 41.8973 62.3994C54.3072 58.2626 63.25 46.5528 63.25 32.7503C63.25 15.4909 49.2586 1.5 32.0003 1.5ZM12.4542 46.0167C12.3854 46.1719 12.1412 46.2185 11.9186 46.1119C11.692 46.0099 11.5647 45.7983 11.6382 45.6425C11.7054 45.4826 11.9502 45.4381 12.1763 45.5452C12.4035 45.6472 12.5329 45.8609 12.4542 46.0167ZM13.9914 47.3882C13.8424 47.5264 13.551 47.4622 13.3533 47.2439C13.1489 47.026 13.1106 46.7347 13.2617 46.5944C13.4154 46.4562 13.698 46.5209 13.9029 46.7388C14.1073 46.9592 14.1472 47.2485 13.9914 47.3882ZM15.046 49.1432C14.8545 49.2761 14.5414 49.1514 14.3479 48.8735C14.1564 48.5956 14.1564 48.2624 14.352 48.1289C14.5461 47.9954 14.8545 48.1154 15.0506 48.3912C15.2416 48.6738 15.2416 49.007 15.046 49.1432ZM16.8294 51.1756C16.6581 51.3645 16.2933 51.3138 16.0263 51.056C15.7531 50.804 15.677 50.4464 15.8488 50.2575C16.0221 50.0681 16.389 50.1214 16.6581 50.3771C16.9293 50.6286 17.0121 50.9888 16.8294 51.1756ZM19.1344 51.8617C19.0588 52.1065 18.7075 52.2177 18.3535 52.1137C18.0001 52.0066 17.7687 51.7199 17.8402 51.4726C17.9136 51.2262 18.2666 51.1103 18.6231 51.2216C18.9761 51.3282 19.2079 51.6128 19.1344 51.8617ZM21.7576 52.1527C21.7664 52.4105 21.4662 52.6242 21.0946 52.6288C20.721 52.6371 20.4188 52.4286 20.4147 52.175C20.4147 51.9147 20.7081 51.703 21.0817 51.6968C21.4533 51.6896 21.7576 51.8966 21.7576 52.1527ZM24.3345 52.054C24.379 52.3055 24.1208 52.5637 23.7518 52.6325C23.3891 52.6988 23.0532 52.5435 23.0071 52.2941C22.9621 52.0364 23.225 51.7781 23.5872 51.7114C23.9567 51.6472 24.2874 51.7983 24.3345 52.054Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M62.7941 29.1489L34.8502 1.20714C33.2421 -0.402379 30.6319 -0.402379 29.0217 1.20714L23.2191 7.00968L30.5799 14.3705C32.2906 13.7925 34.2519 14.1802 35.6156 15.5439C36.9857 16.9161 37.3705 18.8942 36.7785 20.6105L43.8725 27.7044C45.5887 27.1132 47.569 27.4959 48.9398 28.8687C50.8555 30.7837 50.8555 33.8876 48.9398 35.804C47.0234 37.7204 43.9195 37.7204 42.0024 35.804C40.5614 34.3616 40.2054 32.2451 40.935 30.4698L34.3193 23.8541L34.3186 41.2638C34.7856 41.4956 35.2266 41.8039 35.6156 42.1915C37.5313 44.1065 37.5313 47.2103 35.6156 49.1281C33.6992 51.0438 30.594 51.0438 28.6804 49.1281C26.7647 47.2103 26.7647 44.1065 28.6804 42.1915C29.1537 41.7189 29.7014 41.3614 30.2857 41.1213V23.5493C29.7014 23.3106 29.1544 22.9553 28.6804 22.4791C27.2289 21.0297 26.8799 18.8999 27.6235 17.1176L20.3681 9.86074L1.20766 29.0197C-0.402554 30.6306 -0.402554 33.2408 1.20766 34.8504L29.1516 62.7929C30.7604 64.4024 33.3699 64.4024 34.9808 62.7929L62.7941 34.9803C64.4036 33.3701 64.4036 30.7585 62.7941 29.1489Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_21_3166)">
                             <path d="M32 0C14.3269 0 0 14.3269 0 32C0 49.6732 14.3269 64 32 64C49.6732 64 64 49.6732 64 32C64 14.3269 49.6732 0 32 0ZM32 3.25424C47.8758 3.25424 60.7458 16.1242 60.7458 32C60.7458 47.8758 47.8758 60.7458 32 60.7458C16.1242 60.7458 3.25424 47.8758 3.25424 32C3.25424 16.1242 16.1242 3.25424 32 3.25424Z" fill="#7B4AE2" fill-opacity="0.5"/>
@@ -557,19 +599,19 @@
                             <path d="M29.9042 0.0172226C29.7666 0.029733 29.3286 0.0735193 28.9345 0.104795C19.8444 0.924225 11.3298 5.82829 5.93705 13.3658C2.93412 17.5568 1.01349 22.3107 0.287781 27.3461C0.0312805 29.1039 0 29.623 0 32.0063C0 34.3895 0.0312805 34.9087 0.287781 36.6664C2.02698 48.6826 10.5791 58.7785 22.1779 62.5191C24.2549 63.1884 26.4446 63.645 28.9345 63.9202C29.9042 64.0266 34.0958 64.0266 35.0655 63.9202C39.3634 63.4449 43.0045 62.3815 46.5955 60.5487C47.146 60.2672 47.2524 60.1922 47.1773 60.1296C47.1273 60.0921 44.7812 56.9457 41.966 53.1426L36.8485 46.2306L30.436 36.7414C26.9075 31.5246 24.0047 27.2586 23.9797 27.2586C23.9546 27.2523 23.9296 31.4683 23.9171 36.6163C23.8983 45.6301 23.8921 45.9929 23.7795 46.2055C23.6168 46.5121 23.4917 46.6372 23.2289 46.7748C23.0287 46.8749 22.8536 46.8936 21.9089 46.8936H20.8266L20.5388 46.7122C20.3511 46.5934 20.2135 46.437 20.1196 46.2556L19.9883 45.9741L20.0008 33.4324L20.0196 20.8845L20.2135 20.6406C20.3136 20.5092 20.5263 20.3403 20.6764 20.259C20.9329 20.1339 21.033 20.1214 22.1153 20.1214C23.3916 20.1214 23.6043 20.1714 23.9359 20.5342C24.0297 20.6343 27.5019 25.8637 31.6559 32.1626C35.81 38.4616 41.4905 47.0625 44.2807 51.2848L49.3482 58.9599L49.6047 58.791C51.8757 57.3148 54.278 55.213 56.1799 53.0237C60.2276 48.3761 62.8364 42.7089 63.7122 36.6664C63.9687 34.9087 64 34.3895 64 32.0063C64 29.623 63.9687 29.1039 63.7122 27.3461C61.973 15.3299 53.4209 5.23405 41.8221 1.49345C39.7763 0.830397 37.5992 0.373768 35.1593 0.0985401C34.5588 0.0359882 30.4235 -0.0328189 29.9042 0.0172226ZM43.0045 19.3708C43.3048 19.5209 43.5488 19.8086 43.6364 20.1089C43.6864 20.2715 43.6989 23.7494 43.6864 31.5872L43.6676 42.834L41.6845 39.794L39.695 36.754V28.5784C39.695 23.2928 39.72 20.3216 39.7576 20.1777C39.8577 19.8274 40.0766 19.5522 40.3769 19.3895C40.6334 19.2582 40.7273 19.2457 41.7095 19.2457C42.6354 19.2457 42.798 19.2582 43.0045 19.3708Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="57" height="64" viewBox="0 0 57 64" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L5.1358 57.602L28.183 64L51.293 57.5926L56.4343 0H0ZM46.9154 53.9685L28.2645 59.0994L28.2645 51.7678L28.2084 51.7811L13.7123 47.7674L12.7225 36.6823H19.8148L20.3296 42.309L28.2099 44.4253L28.2645 44.4171V33.0141L12.3745 33.014L11.7558 25.9598V25.9598L28.2645 18.894L28.2646 18.406H11.1276L10.5016 11.3517H28.1929H28.2646L28.2645 4.79706H51.2852L46.9154 53.9685Z" fill="#7B4AE2" fill-opacity="0.5"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M29.4032 18.4058L28.2645 18.8939V25.9595H28.2645V33.0138H36.8922L36.108 42.2367L28.2645 44.423V51.7731L42.7125 47.7594L44.6151 25.9595H28.2646L45.2565 18.4058L45.8633 11.3516H28.2645V18.3174V18.4058H29.4032Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                             <path d="M31.9316 62.9622L9.82022 56.824L4.84312 1H59.0887L54.1064 56.8147L31.9316 62.9622Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-width="2"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M46.4246 47.7632L46.5308 46.5696L48.191 27.9706L48.3633 26.0735H22.6176L21.9719 18.8392H31.9538H48.9834L49.1479 17.2512L49.4698 13.6698L49.6387 11.7744H31.9538H14.2511L14.4202 13.6698L16.1566 33.1381H31.966H40.6409L39.8209 42.3005L31.9647 44.421L24.067 42.305L23.5641 36.6706H19.7408H16.4722L17.462 47.7632L31.9335 51.7806L46.4246 47.7632Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                             <g clip-path="url(#clip0_21_3162)">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4167 0C15.5287 0 10.75 4.77867 10.75 10.6667C10.75 16.5547 15.5287 21.3333 21.4167 21.3333C15.5287 21.3333 10.75 26.112 10.75 32C10.75 37.888 15.5287 42.6667 21.4167 42.6667C15.5287 42.6667 10.75 47.4453 10.75 53.3333C10.75 59.2213 15.5287 64 21.4167 64C27.3047 64 32.0833 59.2213 32.0833 53.3333L32.0833 32C32.0833 37.888 36.862 42.6667 42.75 42.6667C48.638 42.6667 53.4167 37.888 53.4167 32C53.4167 26.112 48.638 21.3333 42.75 21.3333C48.638 21.3333 53.4167 16.5547 53.4167 10.6667C53.4167 4.77867 48.638 0 42.75 0H21.4167ZM42.75 21.3333H32.0833L32.0833 32C32.0833 26.112 36.862 21.3333 42.75 21.3333Z" fill="#7B4AE2" fill-opacity="0.5"/>
@@ -581,17 +623,17 @@
                             </defs>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0003 1.5C14.7435 1.5 0.75 15.4909 0.75 32.7503C0.75 46.5574 9.70415 58.2714 22.1208 62.4035C23.6826 62.6928 24.256 61.7256 24.256 60.9002C24.256 60.155 24.227 57.6933 24.2136 55.0821C15.5197 56.9725 13.6852 51.395 13.6852 51.395C12.2637 47.7829 10.2154 46.8224 10.2154 46.8224C7.3801 44.8828 10.4292 44.9227 10.4292 44.9227C13.5672 45.1431 15.2196 48.143 15.2196 48.143C18.0068 52.9205 22.5302 51.5393 24.3134 50.7408C24.5939 48.7211 25.4038 47.3425 26.2975 46.5621C19.3564 45.7719 12.0598 43.0923 12.0598 31.1181C12.0598 27.7063 13.2805 24.9185 15.2796 22.7301C14.9551 21.943 13.8855 18.7645 15.5823 14.46C15.5823 14.46 18.2065 13.6202 24.1784 17.6633C26.6711 16.9709 29.3445 16.6237 32.0003 16.6118C34.656 16.6237 37.3315 16.9709 39.8289 17.6633C45.7935 13.6202 48.414 14.46 48.414 14.46C50.115 18.7645 49.0449 21.943 48.7204 22.7301C50.7241 24.9185 51.9366 27.7063 51.9366 31.1181C51.9366 43.1208 44.626 45.7636 37.6673 46.5373C38.7882 47.507 39.7869 49.4088 39.7869 52.3244C39.7869 56.5057 39.7507 59.8709 39.7507 60.9002C39.7507 61.7318 40.3132 62.7063 41.8973 62.3994C54.3072 58.2626 63.25 46.5528 63.25 32.7503C63.25 15.4909 49.2586 1.5 32.0003 1.5ZM12.4542 46.0167C12.3854 46.1719 12.1412 46.2185 11.9186 46.1119C11.692 46.0099 11.5647 45.7983 11.6382 45.6425C11.7054 45.4826 11.9502 45.4381 12.1763 45.5452C12.4035 45.6472 12.5329 45.8609 12.4542 46.0167ZM13.9914 47.3882C13.8424 47.5264 13.551 47.4622 13.3533 47.2439C13.1489 47.026 13.1106 46.7347 13.2617 46.5944C13.4154 46.4562 13.698 46.5209 13.9029 46.7388C14.1073 46.9592 14.1472 47.2485 13.9914 47.3882ZM15.046 49.1432C14.8545 49.2761 14.5414 49.1514 14.3479 48.8735C14.1564 48.5956 14.1564 48.2624 14.352 48.1289C14.5461 47.9954 14.8545 48.1154 15.0506 48.3912C15.2416 48.6738 15.2416 49.007 15.046 49.1432ZM16.8294 51.1756C16.6581 51.3645 16.2933 51.3138 16.0263 51.056C15.7531 50.804 15.677 50.4464 15.8488 50.2575C16.0221 50.0681 16.389 50.1214 16.6581 50.3771C16.9293 50.6286 17.0121 50.9888 16.8294 51.1756ZM19.1344 51.8617C19.0588 52.1065 18.7075 52.2177 18.3535 52.1137C18.0001 52.0066 17.7687 51.7199 17.8402 51.4726C17.9136 51.2262 18.2666 51.1103 18.6231 51.2216C18.9761 51.3282 19.2079 51.6128 19.1344 51.8617ZM21.7576 52.1527C21.7664 52.4105 21.4662 52.6242 21.0946 52.6288C20.721 52.6371 20.4188 52.4286 20.4147 52.175C20.4147 51.9147 20.7081 51.703 21.0817 51.6968C21.4533 51.6896 21.7576 51.8966 21.7576 52.1527ZM24.3345 52.054C24.379 52.3055 24.1208 52.5637 23.7518 52.6325C23.3891 52.6988 23.0532 52.5435 23.0071 52.2941C22.9621 52.0364 23.225 51.7781 23.5872 51.7114C23.9567 51.6472 24.2874 51.7983 24.3345 52.054Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M62.7941 29.1489L34.8502 1.20714C33.2421 -0.402379 30.6319 -0.402379 29.0217 1.20714L23.2191 7.00968L30.5799 14.3705C32.2906 13.7925 34.2519 14.1802 35.6156 15.5439C36.9857 16.9161 37.3705 18.8942 36.7785 20.6105L43.8725 27.7044C45.5887 27.1132 47.569 27.4959 48.9398 28.8687C50.8555 30.7837 50.8555 33.8876 48.9398 35.804C47.0234 37.7204 43.9195 37.7204 42.0024 35.804C40.5614 34.3616 40.2054 32.2451 40.935 30.4698L34.3193 23.8541L34.3186 41.2638C34.7856 41.4956 35.2266 41.8039 35.6156 42.1915C37.5313 44.1065 37.5313 47.2103 35.6156 49.1281C33.6992 51.0438 30.594 51.0438 28.6804 49.1281C26.7647 47.2103 26.7647 44.1065 28.6804 42.1915C29.1537 41.7189 29.7014 41.3614 30.2857 41.1213V23.5493C29.7014 23.3106 29.1544 22.9553 28.6804 22.4791C27.2289 21.0297 26.8799 18.8999 27.6235 17.1176L20.3681 9.86074L1.20766 29.0197C-0.402554 30.6306 -0.402554 33.2408 1.20766 34.8504L29.1516 62.7929C30.7604 64.4024 33.3699 64.4024 34.9808 62.7929L62.7941 34.9803C64.4036 33.3701 64.4036 30.7585 62.7941 29.1489Z" fill="#7B4AE2" fill-opacity="0.5"/>
                           </svg>
                     </button>
-                    <button>
+                    <button class="hidden sm:block">
                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_21_3166)">
                             <path d="M32 0C14.3269 0 0 14.3269 0 32C0 49.6732 14.3269 64 32 64C49.6732 64 64 49.6732 64 32C64 14.3269 49.6732 0 32 0ZM32 3.25424C47.8758 3.25424 60.7458 16.1242 60.7458 32C60.7458 47.8758 47.8758 60.7458 32 60.7458C16.1242 60.7458 3.25424 47.8758 3.25424 32C3.25424 16.1242 16.1242 3.25424 32 3.25424Z" fill="#7B4AE2" fill-opacity="0.5"/>
@@ -610,53 +652,53 @@
             <section class="Career flex flex-col items-center">
                 <button class="border px-2.5 py-1 w-fit background-10 textColor-p fontweight-700">💼 Career</button>
                 <h2 class="text-5xl mb-16 mt-4 text-white">Trajectory until here</h2>
-                <div class="grid grid-cols-2 text-center">
+                <div class="grid grid-cols-1 gap-6 sm:gap-1 sm:grid-cols-2 text-center">
                     <div>
                         <h3 class="text-white text-3xl">Profissional area</h3>
                         <h4 class="text-white mt-2 mb-16 opacity-60 text-2xl">2016 · currently</h4>
                         <div class="flex flex-col gap-16">
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="hidden sm:flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="hidden sm:flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="hidden sm:flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="hidden sm:flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
@@ -666,39 +708,39 @@
                         <h3 class="text-white text-3xl">Acadêmica</h3>
                         <h4 class="text-white mt-2 mb-16 opacity-60 text-2xl">2014 · currently</h4>
                         <div class="flex flex-col gap-16">
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="hidden sm:flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="hidden sm:flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
-                            <div class="flex text-start mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
-                                <h5 class="text-xl text-white">Front-end developer at Ensinio</h5>
-                                <h6 class="text-base text-white opacity-60">
+                            <div class="hidden sm:flex text-start mx-1 sm:mx-20 p-8 flex-col gap-2 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded">
+                                <h5 class="text-base sm:text-xl text-white">Front-end developer at Ensinio</h5>
+                                <h6 class="text-sm sm:text-base text-white opacity-60">
                                     Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                                 </h6>
-                                <div class="flex justify-between text-purple-600 text-lg">
+                                <div class="flex justify-between text-purple-600 text-xs sm:text-lg">
                                     <span>1 year and 7 months</span><span>Abril/2021 · Atualmente</span>
                                 </div>
                             </div>
@@ -709,74 +751,74 @@
             <section class="Recommendations">
                 <button class="border px-2.5 py-1 w-fit background-10 textColor-p fontweight-700">💬 Recommendations</button>
                 <div class="flex justify-between items-center">
-                    <h2 class="text-5xl mb-16 mt-4 text-white">in deposition</h2>
-                    <div>
+                    <h2 class="text-2xl sm:text-5xl mb-16 mt-4 text-white">in deposition</h2>
+                    <div class="hidden sm:flex gap-3">
                         <button class="w-12 h-12 rounded-2xl border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 textColor-p fontweight-700"><</button>
                         <button class="w-12 h-12 rounded-2xl border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 textColor-p fontweight-700">></button>
                     </div>
                 </div>
-                <div class="grid grid-cols-3 gap-12">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
                     <div class="flex text-start p-8 flex-col gap-3 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                             <path d="M13.5 18.002H5C4.73478 18.002 4.48043 17.8966 4.29289 17.7091C4.10536 17.5215 4 17.2672 4 17.002V9.00195C4 8.73674 4.10536 8.48238 4.29289 8.29485C4.48043 8.10731 4.73478 8.00195 5 8.00195H12.5C12.7652 8.00195 13.0196 8.10731 13.2071 8.29485C13.3946 8.48238 13.5 8.73674 13.5 9.00195V20.002C13.5 21.328 12.9732 22.5998 12.0355 23.5375C11.0979 24.4752 9.82608 25.002 8.5 25.002" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M28 18.002H19.5C19.2348 18.002 18.9804 17.8966 18.7929 17.7091C18.6054 17.5215 18.5 17.2672 18.5 17.002V9.00195C18.5 8.73674 18.6054 8.48238 18.7929 8.29485C18.9804 8.10731 19.2348 8.00195 19.5 8.00195H27C27.2652 8.00195 27.5196 8.10731 27.7071 8.29485C27.8946 8.48238 28 8.73674 28 9.00195V20.002C28 21.328 27.4732 22.5998 26.5355 23.5375C25.5979 24.4752 24.3261 25.002 23 25.002" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
-                        <h6 class="text-base text-white opacity-60">
+                        <h6 class="text-sm sm:text-base text-white opacity-60">
                             Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                         </h6>
                         <div class="flex gap-2">
-                            <img src="./image 3.png" alt="">
+                            <img class="w-10 h-10 sm:w-14 sm:h-14" src="./image 3.png" alt="">
                             <div>
-                                <h4 class="text-xl text-white">Romário Lima</h4>
-                                <h5 class="text-base text-purple-600">Engenheiro da Computação</h5>
+                                <h4 class="text-xs sm:text-xl text-white">Romário Lima</h4>
+                                <h5 class="text-xs sm:text-base text-purple-600">Engenheiro da Computação</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="flex text-start p-8 flex-col gap-3 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
+                    <div class="hidden sm:flex text-start p-8 flex-col gap-3 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                             <path d="M13.5 18.002H5C4.73478 18.002 4.48043 17.8966 4.29289 17.7091C4.10536 17.5215 4 17.2672 4 17.002V9.00195C4 8.73674 4.10536 8.48238 4.29289 8.29485C4.48043 8.10731 4.73478 8.00195 5 8.00195H12.5C12.7652 8.00195 13.0196 8.10731 13.2071 8.29485C13.3946 8.48238 13.5 8.73674 13.5 9.00195V20.002C13.5 21.328 12.9732 22.5998 12.0355 23.5375C11.0979 24.4752 9.82608 25.002 8.5 25.002" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M28 18.002H19.5C19.2348 18.002 18.9804 17.8966 18.7929 17.7091C18.6054 17.5215 18.5 17.2672 18.5 17.002V9.00195C18.5 8.73674 18.6054 8.48238 18.7929 8.29485C18.9804 8.10731 19.2348 8.00195 19.5 8.00195H27C27.2652 8.00195 27.5196 8.10731 27.7071 8.29485C27.8946 8.48238 28 8.73674 28 9.00195V20.002C28 21.328 27.4732 22.5998 26.5355 23.5375C25.5979 24.4752 24.3261 25.002 23 25.002" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
-                        <h6 class="text-base text-white opacity-60">
+                        <h6 class="text-sm sm:text-base text-white opacity-60">
                             Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                         </h6>
                         <div class="flex gap-2">
-                            <img src="./image 3.png" alt="">
+                            <img class="w-10 h-10 sm:w-14 sm:h-14" src="./image 3.png" alt="">
                             <div>
-                                <h4 class="text-xl text-white">Romário Lima</h4>
-                                <h5 class="text-base text-purple-600">Engenheiro da Computação</h5>
+                                <h4 class="text-xs sm:text-xl text-white">Romário Lima</h4>
+                                <h5 class="text-xs sm:text-base text-purple-600">Engenheiro da Computação</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="flex text-start p-8 flex-col gap-3 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
+                    <div class="hidden sm:flex text-start p-8 flex-col gap-3 border border-solid border-purple-900 hover:bg-purple-900 hover hover:bg-opacity-20 rounded-2xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                             <path d="M13.5 18.002H5C4.73478 18.002 4.48043 17.8966 4.29289 17.7091C4.10536 17.5215 4 17.2672 4 17.002V9.00195C4 8.73674 4.10536 8.48238 4.29289 8.29485C4.48043 8.10731 4.73478 8.00195 5 8.00195H12.5C12.7652 8.00195 13.0196 8.10731 13.2071 8.29485C13.3946 8.48238 13.5 8.73674 13.5 9.00195V20.002C13.5 21.328 12.9732 22.5998 12.0355 23.5375C11.0979 24.4752 9.82608 25.002 8.5 25.002" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M28 18.002H19.5C19.2348 18.002 18.9804 17.8966 18.7929 17.7091C18.6054 17.5215 18.5 17.2672 18.5 17.002V9.00195C18.5 8.73674 18.6054 8.48238 18.7929 8.29485C18.9804 8.10731 19.2348 8.00195 19.5 8.00195H27C27.2652 8.00195 27.5196 8.10731 27.7071 8.29485C27.8946 8.48238 28 8.73674 28 9.00195V20.002C28 21.328 27.4732 22.5998 26.5355 23.5375C25.5979 24.4752 24.3261 25.002 23 25.002" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                           </svg>
-                        <h6 class="text-base text-white opacity-60">
+                        <h6 class="text-sm sm:text-base text-white opacity-60">
                             Desenvolvimento de features na aplicação principal e site. com React Js e Typescript, além do auxíllio de outras tecnologias como Next, Styled Components e padrões de arquitetura.
                         </h6>
                         <div class="flex gap-2">
-                            <img src="./image 3.png" alt="">
+                            <img class="w-10 h-10 sm:w-14 sm:h-14" src="./image 3.png" alt="">
                             <div>
-                                <h4 class="text-xl text-white">Romário Lima</h4>
-                                <h5 class="text-base text-purple-600">Engenheiro da Computação</h5>
+                                <h4 class="text-xs sm:text-xl text-white">Romário Lima</h4>
+                                <h5 class="text-xs sm:text-base text-purple-600">Engenheiro da Computação</h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="contact flex flex-col items-center">
+            <section class="contact flex flex-col items-start sm:items-center">
                 <button class="border px-2.5 py-1 w-fit background-10 textColor-p fontweight-700">📬 Contacts</button>
-                <h2 class="text-5xl mb-16 mt-4 text-white">Vamos conversar! </h2>
-                <div class="flex gap-10 mb-16 items-center">
+                <h2 class="text-2xl sm:text-5xl mb-8 sm:mb-16 mt-4 text-white">Between in contact </h2>
+                <div class="flex flex-col sm:flex-row gap-2 sm:gap-10 mb-16 items-start sm:items-center">
                     <button class="border h-fit border-solid border-purple-700 flex mb-6 px-2.5 py-2 textColor-p fontweight-700">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4.25626 16.5937C3.13959 14.7098 2.74899 12.483 3.1578 10.3314C3.5666 8.17982 4.74669 6.25145 6.47652 4.9083C8.20636 3.56516 10.367 2.8996 12.5527 3.03658C14.7385 3.17357 16.7991 4.10367 18.3477 5.65227C19.8963 7.20088 20.8264 9.26149 20.9634 11.4473C21.1004 13.633 20.4348 15.7937 19.0917 17.5235C17.7486 19.2533 15.8202 20.4334 13.6686 20.8422C11.5171 21.251 9.29025 20.8604 7.40626 19.7437V19.7437L4.29376 20.625C4.16624 20.6623 4.03103 20.6646 3.90231 20.6317C3.77359 20.5987 3.6561 20.5318 3.56215 20.4379C3.4682 20.3439 3.40126 20.2264 3.36833 20.0977C3.33541 19.969 3.33771 19.8338 3.37501 19.7062L4.25626 16.5937Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M14.2594 17.25C13.2726 17.2525 12.295 17.0599 11.3828 16.6834C10.4706 16.3069 9.64176 15.7539 8.94395 15.0561C8.24615 14.3583 7.69311 13.5295 7.3166 12.6173C6.9401 11.7051 6.74755 10.7275 6.75002 9.74062C6.7525 9.04605 7.03016 8.38078 7.52217 7.89052C8.01419 7.40027 8.68045 7.12499 9.37502 7.125V7.125C9.48962 7.12408 9.60234 7.15407 9.70133 7.21182C9.80032 7.26956 9.88191 7.35292 9.93752 7.45312L11.0344 9.36562C11.0996 9.48188 11.1331 9.61327 11.1315 9.74657C11.1298 9.87987 11.0931 10.0104 11.025 10.125L10.1438 11.5969C10.5952 12.601 11.399 13.4049 12.4031 13.8562L13.875 12.975C13.9896 12.9069 14.1202 12.8702 14.2535 12.8686C14.3868 12.8669 14.5181 12.9004 14.6344 12.9656L16.5469 14.0625C16.6471 14.1181 16.7305 14.1997 16.7882 14.2987C16.8459 14.3977 16.8759 14.5104 16.875 14.625C16.8726 15.3188 16.5965 15.9837 16.1068 16.4751C15.6171 16.9666 14.9532 17.2451 14.2594 17.25V17.25Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                            
                         Vamos conversar </button>
-                    <div class="flex flex-col gap-2 items-center">
+                    <div class="flex flex-col gap-2 sm:items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path d="M32.8594 5.60823L3.73437 13.8114C3.48644 13.8791 3.26544 14.0217 3.10146 14.2196C2.93748 14.4175 2.8385 14.6612 2.81801 14.9174C2.79751 15.1736 2.85649 15.4299 2.98692 15.6514C3.11734 15.8729 3.31287 16.0488 3.54687 16.1551L16.9219 22.4832C17.1839 22.6046 17.3943 22.815 17.5156 23.077L23.8437 36.452C23.9501 36.686 24.126 36.8815 24.3474 37.0119C24.5689 37.1424 24.8252 37.2013 25.0814 37.1808C25.3376 37.1603 25.5813 37.0614 25.7792 36.8974C25.9771 36.7334 26.1197 36.5124 26.1875 36.2645L34.3906 7.13948C34.4528 6.92694 34.4566 6.7016 34.4017 6.48707C34.3469 6.27253 34.2353 6.07671 34.0787 5.92013C33.9221 5.76355 33.7263 5.65198 33.5118 5.5971C33.2973 5.54222 33.0719 5.54607 32.8594 5.60823V5.60823Z" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M17.3281 22.6709L24.3906 15.6084" stroke="#7B4AE2" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -793,7 +835,7 @@
             </section>
     </main>
     </div>
-    <footer class="grid grid-cols-3 px-36 py-4 items-center">
+    <footer class="flex gap-4 flex-col-reverse sm:grid sm:grid-cols-3 px-6 sm:px-36 py-4 items-center">
         <span class="">Copyright © Henrique Sousa · 2022</span>
         <div class="flex justify-center gap-5">
             <button>
